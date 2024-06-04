@@ -17,11 +17,11 @@ app.listen(PORT, () => {
 //! CREATE DATABASE "topicos"
 
 const conection = mysql.createConnection({
-    host: "bkattkbsenwzjiuq5vfu-mysql.services.clever-cloud.com",
-    user: "uga8ijfjgy7pveug",
-    password: "OKtdbS7nGEnTMIfmu1wB",
+    host: "localhost",
+    user: "root",
+    password: "danielyeray5",
     port: 3306,
-    database: "bkattkbsenwzjiuq5vfu"
+    database: "topicos"
 })
 
 conection.connect((err) => {
@@ -33,7 +33,7 @@ conection.connect((err) => {
 })
 
 app.get("/", (req, res) => {
-    conection.query("SELECT * FROM bkattkbsenwzjiuq5vfu.usuarios;", (e, result) => {
+    conection.query("SELECT * FROM usuarios;", (e, result) => {
         if (e) {
             res.status(500).json('message: ', e.message || "No se pudo conectar a la base de datos")
         } else {
