@@ -33,7 +33,7 @@ conection.connect((err) => {
 })
 
 app.get("/", (req, res) => {
-    conection.query("SELECT * FROM topicos.usuarios;", (e, result) => {
+    conection.query("SELECT * FROM bkattkbsenwzjiuq5vfu.usuarios;", (e, result) => {
         if (e) {
             res.status(500).json('message: ', e.message || "No se pudo conectar a la base de datos")
         } else {
