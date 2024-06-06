@@ -55,7 +55,7 @@ app.post('/', (req, res) => {
 
 app.patch('/', (req, res) => {
     const { ID, Nombre } = req.body
-    conection.query(`UPDATE usuarios SET Nombre="${Nombre}" WHERE ID=${ID} ; `, (e, result) => {
+    conection.query(`UPDATE bkattkbsenwzjiuq5vfu.usuarios SET Nombre="${Nombre}" WHERE ID=${ID} ; `, (e, result) => {
         if (e) {
             res.status(500).json('message', e.message || "No se puede actualizar la base de datos")
         } else {
