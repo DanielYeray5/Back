@@ -17,11 +17,11 @@ app.listen(PORT, () => {
 //! CREATE DATABASE "topicos"
 
 const conection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "danielyeray5",
+    host: "bkattkbsenwzjiuq5vfu-mysql.services.clever-cloud.com",
+    user: "uga8ijfjgy7pveug",
+    password: "OKtdbS7nGEnTMIfmu1wB",
     port: 3306,
-    database: "topicos"
+    database: "bkattkbsenwzjiuq5vfu"
 })
 
 conection.connect((err) => {
